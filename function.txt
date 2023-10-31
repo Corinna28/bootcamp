@@ -1,0 +1,37 @@
+// Création d'une fonction
+function newFunction(){
+    alert('Bonjour, c\'est un test');
+}
+// Appel de la fonction
+newFunction();
+
+// Création d'une fonction avec paramètre par défault
+function sayHello(name = 'utilisateur inconnu'){
+
+    alert('Bonjour ' + name + ' !');
+}
+
+// Appel de la fonction
+sayHello('Alice');
+// Appel de la fonction
+sayHello('Bob');
+// Appel de la fonction
+sayHello();
+
+// Création d'une fonction avec retour de résultat (le triple du nombre mis en paramètre)
+function triple(number){
+    return number*3;
+}
+
+// variable globale accessible de partout
+let result = triple(40);
+
+// Création d'une fonction avec variable locale accessible uniquement dans sa fonction
+function test(){
+
+    let firstname = 'Thor';
+    alert(firstname);
+
+}
+
+alert(firstname);

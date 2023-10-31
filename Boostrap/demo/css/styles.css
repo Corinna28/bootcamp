@@ -1,0 +1,48 @@
+/*Style global de ma page*/
+body{
+    font-size: 1.25rem;
+    font-family: sans-serif;
+
+}
+
+h1,h2{
+    text-align: center;
+}
+
+/*Les lignes*/
+
+.border-black{
+    border: 2px solid black;
+}
+
+/*Les colonnes*/
+
+div.row{
+    margin-bottom: 60px;
+}
+
+.text-white{
+    color: white;
+}
+
+.color-red{
+    background-color: rgb(152, 42, 42);
+}
+.color-blue{
+    background-color: rgb(85, 163, 187);
+}
+.color-yellow{
+    background-color: rgb(226, 206, 93);
+}
+.color-green{
+    background-color: rgb(56, 126, 56);
+}
+.color-black{
+    background-color: rgb(21, 20, 20);
+}
+.color-grey{
+    background-color: rgba(158, 156, 156, 0.856);
+}
+.color-pink{
+    background-color: rgb(210, 156, 165);
+}

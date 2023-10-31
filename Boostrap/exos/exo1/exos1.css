@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    
+}
+
+.colonne1 {
+    flex: 6; /* La colonne 1 occupe 6 colonnes de largeur */
+    background-color: #ee0707;
+}
+
+.colonne2 {
+    flex: 6; /* La colonne 2 occupe 6 colonne de largeur */
+    background-color: #19b619;
+}
+
+.colo1 {
+    flex: 4; /* La colonne 1 occupe 4 colonnes de largeur */
+    background-color: #f809b9;
+}
+
+.colo2 {
+    flex: 4; /* La colonne 2 occupe 4 colonnes de largeur */
+    background-color: #1dca1d;
+}
+
+.colo3 {
+    flex: 4; /* La colonne 3 occupe 4 colonnes de largeur */
+    background-color: #1010ac;
+}
+
+
+
+
+
+
+

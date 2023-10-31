@@ -1,0 +1,44 @@
+
+// Création d'un array contenant des noms de chat
+let cats = ['Thor','Plume','Kali'];
+
+alert(cats[1]);
+
+// fonction qui permet d'ajouter un élément au début de mon array
+cats.unshift('Félix');
+
+alert(cats[1]);
+
+
+// fonction qui permet d'ajouter un élément à la fin de mon array
+cats.push('Lumo');
+alert(cats[4]);
+
+
+// fonction qui permet de supprimer un élément au début de mon array
+cats.shift();
+alert(cats[0]);
+
+
+// fonction qui permet de supprimer un élément à la fin de mon array
+cats.pop();
+alert(cats[2]);
+
+alert(cats.length);
+
+
+let animals = ['Choupisson','Chat','Chien','Calamar'];
+
+// forEach me permet ici d'effectuer mon alert sur l'ensemble des valeurs de mon array
+animals.forEach((animal)=>{
+    alert(animal);
+});
+
+// arrays multidimensionnels (un array contenant d'autres array)
+let animals02 = [
+    ['Chat', 'roux'],
+    ['Chien', 'beige'],
+    ['Tortue', 'verte'],
+]
+
+alert(animals02[1][0]);

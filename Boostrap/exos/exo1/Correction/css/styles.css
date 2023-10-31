@@ -1,0 +1,29 @@
+body{
+    font-size: 1.25rem;
+    font-family: sans-serif;
+    text-align: center;
+}
+.row>div{
+    padding:3rem;
+}
+
+/*Les lignes*/
+
+.border-black{
+    border: 2px solid black;
+}
+
+/*Les colonnes*/
+.text-white{
+    color: white;
+}
+
+.color-red{
+    background-color: rgb(143, 17, 17);
+}
+.color-blue{
+    background-color: rgb(63, 63, 185);
+}
+.color-green{
+    background-color: green;
+}

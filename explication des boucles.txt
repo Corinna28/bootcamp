@@ -1,0 +1,39 @@
+// Itérateur à 0 au début
+let i = 0;
+
+// La boucle s'executera tant que i sera plus petit que 10
+while(i < 10){
+    alert('Je suis une boucle !');
+
+    // Pour augmenter le compteur, sinon boucle infini !
+    i++;
+}
+
+// Boucle For :
+for(let i = 0; i < 10; i++){
+    alert('Je suis une boucle !');
+}
+
+// Do While : s'exécute au moins une fois même si la condition est fausse dés le départ
+do{
+    alert('bonjour');
+}while(false);
+
+
+while(true){
+    // On demande le mot de passe
+    let userPwd = prompt('Quel est le mot de passe ?');
+
+    if(userPwd === 'Fortuna Major'){
+
+        alert('C\'est le bon mot de passe !');
+
+        // Stop la boucle pour qu'elle ne s'exécute plus
+        break;
+
+    }
+
+    alert('Mauvais mot de passe, veuillez ré-essayer.');
+
+
+}

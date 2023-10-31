@@ -1,0 +1,19 @@
+->Bien commenter son code (html et css)
+
+->Noms de class / id en anglais et suffisament parlant
+
+->Pour l'atribut alt des images, c'est soit alt="" ou alt= "description de mon image"
+
+->Vérifier son indentation : on décale d'une tabulation quand on se trouve dans un parent
+
+->Faire attention à son chemin pour les images ou link pour un projet, la source doit partir du point de départ de l'index de votre dossier de projet (exemple :  dossier exercice / dans ce dossier un index. hml, un dossier css qui contient les styles.css et un dossier img qui contient les images. donc si j'utilise une balise img dans mon index, son chemin ressemblera à ça : img/nom-image.jpg ou ./img/nom-image.jpg
+
+->Quand du code de formulaire est repris il faut penser à ré-adapter les noms d'id et for de l'étiquette et du champ et ajouter un name au input
+
+->Pas d'espace, caractère spécial ou de majuscule dans les noms d'ancres et tout ce qui touche aux chemins (nom de dossier, nom de fichier etc.)
+
+->Si vous avez besoin de faire de l'imbrication avec le système de grille bootstrap li faut partir du principe qu'il s'agit de col dans des row qui peuvent elle même avoir des row puis des col à l'intérieur des row, donc pas de col dans des col en enfant direct ni de row dans des row en enfant direct.
+
+->Attention a bien faire la différence entre une balise img qui sera intégré dans la page et une image de fond qui sera intégré via le css
+
+->Une fois que la page est terminé, je fais un test de validation au W3C
