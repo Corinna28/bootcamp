@@ -1,0 +1,38 @@
+p {
+    margin: 0;
+}
+
+.bD {
+    color: #21c165;
+    background-color: lightgreen;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    font-weight: bold;
+}
+
+.bG {
+    background-color: lightgreen;
+    color: blueviolet;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.hG {
+    background-color: lightgreen;
+    color: red;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.hD {
+    background-color: lightgreen;
+    color: black;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+Envoyer un message dans #ressources

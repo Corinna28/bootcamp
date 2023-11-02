@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.static {
+    background-color: lightblue;
+    padding: 20px;
+    /* Pas besoin de spécifier de position pour static */
+}
+
+.relative {
+    position: relative;
+    top: 10px;
+    left: 20px;
+    background-color: lightgreen;
+    padding: 20px;
+}
+
+.absolute {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    background-color: lightcoral;
+    padding: 20px;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: lightyellow;
+    padding: 20px;
+    width: 100%;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: lightpink;
+    padding: 20px;
+}

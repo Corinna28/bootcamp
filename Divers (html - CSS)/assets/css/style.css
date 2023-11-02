@@ -1,0 +1,16 @@
+body{
+    background: #be5959 url(/assets/images/38621818.webp) no-repeat; /* image de fond */
+    background-size: cover; /* couverture du fond */
+    }
+    .contenu{
+    background-color: rgba(238, 240, 227, 0.98); /* atténuation, nous gardons 30% de la couleur blanche */
+    width: 800px; /* largeur */
+    height: 500px; /* hauteur */
+    margin: 200px auto 0 auto; /* marges ext*/
+    padding: 10px; /* marges int. */
+    }
+    .contenu  p{
+    position : relative; /* positionnement */
+    top: 50%; /* écartement de 50% du haut de la page */
+    text-align: center; /* alignement du texte */
+    }
