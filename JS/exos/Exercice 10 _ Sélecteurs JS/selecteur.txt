@@ -1,0 +1,46 @@
+
+// Sélecteurs (les plus anciens)
+// Selection par id d'un élément html
+document.getElementById('main-title');
+
+// Selection par class d'un ou plusieurs élément(s) html
+document.getElementsByClassName('styles-text');
+
+// Selection par nom de balise html
+document.getElementsByTagName('h2');
+
+// Sélecteurs (les plus récents)
+// Selection d'un élément(le premier sur lequel on tombe) par ici son nom de balise, son id ou sa class
+let titleH2 = document.querySelector('h2');
+// document.querySelector('#main-title');
+// document.querySelector('.styles-text');
+
+// Selection d'un ou plusieurs éléments par ici son nom de balise ou sa class
+let titlesH2 = document.querySelectorAll('h2');
+document.querySelectorAll('.styles-text');
+document.querySelectorAll('section>div');
+
+let divSection = document.querySelectorAll('.styles-text');
+
+let paragraphDivSection = divSection.querySelectorAll('p');
+
+
+let parentList = document.querySelector('.parent-list');
+
+// Pour cibler des éléments enfants
+
+let childrenList = parentList.children;
+let firstChildrenList = parentList.firstElementChild;
+let lastChildrenList = parentList.lastElementChild;
+let oneChildList = parentList.children[2];
+
+
+// Pour cibler des éléments frères
+
+let target = document.querySelector('.target');
+let previousTarget = target.previousElementSibling;
+let nextTarget = target.nextElementSibling;
+
+// Pour cibler des éléments parents
+let text = document.querySelector('.text');
+let parentText = text.parentElement;
