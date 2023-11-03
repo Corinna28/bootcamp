@@ -24,17 +24,17 @@
           <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores totam modi consequuntur facere asperiores enim ullam cumque, mollitia et sit velit facilis alias necessitatibus, ut aperiam consectetur quas. Fugiat, mollitia?</span><span></p>
         </div>
       </section>
-      <section>
-      <h2>Titre de ma section</h2>
-      <!-- ul>li*5>lorem4 + tab -->
-      <ul class="parent-list">
-        <li>Lorem ipsum dolor sit.</li>
-        <li>Blanditiis praesentium molestias ducimus!</li>
-        <li class="target">Ratione explicabo sequi quos?</li>
-        <li>Repudiandae cum odio expedita.</li>
-        <li>Perspiciatis fugit ratione sequi.</li>
-      </ul>
-    </section>
+      <section class="section-list">
+        <h2>Titre de ma section</h2>
+        <!-- ul>li*5>lorem4 + tab -->
+        <ul class="parent-list">
+          <li>Lorem ipsum dolor sit.</li>
+          <li>Blanditiis praesentium molestias ducimus!</li>
+          <li class="target">Ratione explicabo sequi quos?</li>
+          <li>Repudiandae cum odio expedita.</li>
+          <li>Perspiciatis fugit ratione sequi.</li>
+        </ul>
+      </section>
 
     <section>
       <div>
