@@ -123,3 +123,13 @@ let copy = sectionList.cloneNode(true);
 sectionList.after(copy);
 
     // autre possibilité d'écriture sans passer par une variable : sectionList.after(sectionList.cloneNode(true));
+
+
+    
+
+
+let elements = document.querySelectorAll('.parent-list>li');
+
+elements.forEach((element)=>{
+    element.style.color = 'red';
+});
