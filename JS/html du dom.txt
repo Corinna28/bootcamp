@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <!-- meta:edge  -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Description de ma page">
+        <!-- link:css -->
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Ma page de test</title>
+    </head>
+    <body>
+      <h1 id="main-title" class="style-main-title">Titre ma page</h1>
+      <section>
+        <h2>Titre de ma section</h2>
+        <div class="styles-text">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores totam modi consequuntur <span>facere asperiores</span> enim ullam cumque, mollitia et sit velit facilis alias necessitatibus, ut aperiam consectetur quas. Fugiat, mollitia?</span></p>
+        </div>
+      </section>
+      <section>
+        <h2>Titre de ma section</h2>
+        <div class="styles-text">
+          <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores totam modi consequuntur facere asperiores enim ullam cumque, mollitia et sit velit facilis alias necessitatibus, ut aperiam consectetur quas. Fugiat, mollitia?</span><span></p>
+        </div>
+      </section>
+      <section>
+      <h2>Titre de ma section</h2>
+      <!-- ul>li*5>lorem4 + tab -->
+      <ul class="parent-list">
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Blanditiis praesentium molestias ducimus!</li>
+        <li class="target">Ratione explicabo sequi quos?</li>
+        <li>Repudiandae cum odio expedita.</li>
+        <li>Perspiciatis fugit ratione sequi.</li>
+      </ul>
+    </section>
+
+    <section>
+      <div>
+        <p class="text">Lorem ipsum dolor sit amet consectetur.</p>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <p class="text02">Kali</p>
+      </div>
+    </section>
+
+    <a class="link-wiki-cat" href="https://fr.wikipedia.org/wiki/Chat">Lien</a>
+
+    <img src="img/chat-roux.jpg" alt="">
+
+
+
+      <!--Mon Script-->
+      <script src="js/script.js"></script>
+
+
+    </body>
+</html>

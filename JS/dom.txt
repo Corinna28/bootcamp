@@ -66,6 +66,7 @@ let attributeValue = imgAnimal.getAttribute('src');
 imgAnimal.setAttribute('src','img/hérisson.jpg');
 
 
+
 // Je selectionne mon titre h1
 let titleMain2 = document.querySelector('h1');
 
@@ -74,7 +75,6 @@ titleMain2.style.color = 'red';
 
 // Je selectionne ma première section pour lui appliquer une couleur de fond "rgb(113, 96, 129)"
 document.querySelector('section').style.backgroundColor = "rgb(113, 96, 129)" ;
-
 
 // Je selectionne mon élément (ici mon <a> par sa classe) puis je le supprime avec .remove()
 document.querySelector('.link-wiki-cat').remove();
@@ -97,3 +97,16 @@ destination.append(targetToMove); // à l'intérieur à la fin
 
 destination.after(targetToMove); // après
 destination.before(targetToMove); // avant
+
+
+// Création et insertion d'un ou plusieurs éléments html avec leurs textes, attributs, classes etc
+
+// Je créé mon footer (<footer></footer>) avec createElement
+let footer = document.createElement('footer');
+
+// Je créé un paragraphe avec du texte à l'intérieur de mon footer
+footer.innerHTML = '<p>lorem ipsum</p>';
+
+// Je place mon footer après mon image
+imgAnimal.after(footer);
+
