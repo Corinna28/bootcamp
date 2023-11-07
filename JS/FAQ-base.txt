@@ -1,0 +1,178 @@
+
+Objet Math :
+
+L'objet Math en JavaScript est un objet intégré qui possède des propriétés et des méthodes pour des fonctions mathématiques.
+
+Quelques exemples d'utilisation courante de l'objet Math :
+
+- Obtenir un nombre aléatoire : Souvent utilisé dans les jeux ou pour choisir aléatoirement un élément dans une liste.
+- Arrondir des nombres : Utile pour les calculs financiers ou toute autre situation où on souhaite présenter des chiffres arrondis.
+- Rechercher la valeur maximale/minimale : Dans un tableau de nombres, par exemple.
+
+Exemple simple :
+
+Imaginons un site de commerce électronique qui propose une remise aléatoire sur un produit lorsque l'utilisateur clique sur un bouton. On peut utiliser Math.random() pour générer cette remise aléatoire.
+
+Code JS :
+function obtenirRemise() {
+    // Génère un pourcentage de remise entre 10 et 50
+    let remise = Math.floor(Math.random() * (50 - 10 + 1)) + 10;
+    alert(`Félicitations ! Vous avez obtenu une remise de ${remise}% !`);
+}
+Code HTML :
+// Sur le site, un bouton pourrait appeler cette fonction :
+// <button onclick="obtenirRemise()">Obtenez une remise aléatoire !</button>
+
+Lorsque l'utilisateur clique sur le bouton, il reçoit une alerte lui indiquant le pourcentage de remise qu'il a obtenu, qui est aléatoirement choisi entre 10% et 50%. Dans cet exemple, nous avons utilisé Math.random() pour obtenir un nombre aléatoire et Math.floor() pour arrondir ce nombre à l'entier le plus proche.
+
+-------------------------------------------------------------------------------------------
+Convention de nommage des variables en JavaScript :
+
+En JavaScript, la convention de nommage la plus couramment adoptée pour les noms de variables est le camelCase, où la première lettre du premier mot est en minuscule et la première lettre de chaque mot suivant est en majuscule. Cette convention est souvent appelée lowerCamelCase pour la distinguer du UpperCamelCase (ou PascalCase), où la première lettre de chaque mot est en majuscule.
+
+Exemples en camelCase :
+
+    userName
+    getUserInfo
+    calculateTotalPrice
+
+Bien que le camelCase soit une convention couramment utilisée, il est essentiel de rester cohérent dans son code. Si on travaille sur un projet qui utilise une autre convention, il vaut mieux la suivre pour garantir la lisibilité et la maintenabilité du code.
+
+La convention camelCase pour nommer les variables en JavaScript n'est pas une règle stricte ou obligatoire, mais plutôt une convention largement adoptée pour des raisons de lisibilité et de cohérence. On peut techniquement nommer nos  variables de la manière que l'on veut tant que l'on respecte les règles syntaxiques du langage (par exemple, en évitant les espaces ou en ne commençant pas par un chiffre).
+
+Voici quelques raisons pour lesquelles suivre des conventions de nommage est en général recommandé :
+
+- Le code est plus souvent lu que écrit. Suivre une convention facilite la lecture et la compréhension du code pour soit-même et pour les autres développeurs.
+
+- Si tout le monde suit la même convention au sein d'une équipe ou d'un projet, cela garantit une cohérence qui rend le code plus prévisible.
+
+- Si vous travaillez dans une équipe, utiliser les mêmes conventions aide à éviter les malentendus et facilite la communication.
+
+- De nombreuses bibliothèques et cadres JavaScript suivent la convention camelCase. Si notre code suit également cette convention, il s'intègrera plus harmonieusement.
+
+- En respectant une convention, vous réduisez les risques d'erreurs dues à des fautes de frappe ou à des confusions sur le nom des variables.
+
+Bien que ce ne soit pas obligatoire, suivre des conventions de nommage est fortement recommandé pour les raisons évoquées ci-dessus. Si on choisis d'utiliser une convention différente, il faut s'assurer de rester cohérent et de bien documenter notre choix pour que d'autres développeurs puissent comprendre et suivre notre logique.
+
+En plus :
+En JavaScript, la distinction entre lowerCamelCase (aussi appelé simplement camelCase) et UpperCamelCase (souvent appelé PascalCase) est généralement utilisée pour différencier le type de l'entité que le nom représente. Voici la convention courante :
+
+lowerCamelCase :
+Pour les variables et fonctions.
+Ex :
+    let myVariable = "Hello";
+    function calculateTotal() { /* ... */ }
+
+UpperCamelCase (PascalCase) :
+Pour les constructeurs ou classes.
+Ex :
+    class UserAccount {
+      constructor(name) {
+        this.name = name;
+      }
+    }
+
+Constantes : Les constantes sont souvent écrites en majuscules avec des underscores.
+const MAX_LIMIT = 100;
+
+Il est recommandé d'adopter cette convention car elle est largement utilisée dans la communauté JavaScript et contribue à la lisibilité du code en signalant immédiatement le type de l'entité (par exemple, une classe par rapport à une variable ou une fonction).
+
+-----------------------------------------------------------------
+Menu burger avec label :
+
+Il est courant de voir un élément <label> utilisé en dehors du contexte d'un formulaire pour servir de déclencheur (toggle) pour un menu "burger" (aussi appelé menu hamburger) ou d'autres éléments interactifs sur des sites web, notamment lors de la conception mobile. Voici un exemple du fonctionnement générale :
+
+    - Un élément <input type="checkbox"> est utilisé comme un commutateur caché.
+    - Le <label> est associé à cet <input> via l'attribut for.
+    - Des styles CSS sont appliqués pour afficher ou masquer le menu en fonction de l'état coché/non coché de l'<input>.
+    - Le <label>, qui est souvent stylisé comme un menu burger, permet de basculer l'état de l'<input> lorsqu'il est cliqué.
+
+Voici un exemple simplifié :
+
+Code JS :
+<input type="checkbox" id="menuToggle">
+<label for="menuToggle" class="burger-icon">☰</label>
+
+<nav class="menu">
+  <!-- éléments de menu ici -->
+</nav>
+
+Code CSS :
+ .menu {
+    display: none;
+  }
+
+  #menuToggle:checked + .burger-icon + .menu {
+    display: block;
+  }
+
+Dans cet exemple, lorsque l'utilisateur clique sur l'icône burger (représentée par "☰" pour la simplicité), le menu est affiché ou masqué.
+
+Bien que cette approche soit courante et fonctionne bien, elle est parfois critiquée pour sa dépendance à un élément <input> en dehors de son intention sémantique normale. Cependant, elle est appréciée pour sa simplicité et son absence de dépendance à JavaScript pour le basculement.
+
+Utiliser un élément <input> en dehors de son contexte sémantique typique pour contrôler le comportement d'autres éléments peut être source de confusion pour les utilisateurs de lecteurs d'écran et autres technologies d'assistance.
+
+Pour une meilleure sémantique et une meilleure accessibilité, nous pouvons utiliser JavaScript combiné à des attributs ARIA.
+
+Voici un exemple qui utilise un bouton au lieu d'un élément <label> et <input>, avec l'ajout d'attributs ARIA pour améliorer l'accessibilité :
+
+Code HTML :
+<button id="menuToggle" aria-haspopup="true" aria-expanded="false">
+  ☰
+</button>
+
+<nav class="menu" aria-labelledby="menuToggle">
+  <!-- éléments de menu ici -->
+</nav>
+
+Code CSS
+  .menu {
+    display: none;
+  }
+
+  .menu[aria-hidden="false"] {
+    display: block;
+  }
+
+Code JS ( Le JavaScript est utilisé pour basculer les états et gérer l'affichage du menu )
+En js il faudra manipuler le DOM (qu'on verra pas la suite)
+Selectionner la button(intrinsèquement accessible par le clavier) et la nav, faire un écouteur d'évènement au clic sur le bouton (les écouteurs nous les verrons après le DOM) puis ajouter un attribut ARIA aria-haspopup et aria-expanded sur le bouton pour indiquer aux utilisateurs de lecteurs d'écran que ce bouton contrôle l'affichage d'un autre élément.
+
+Cela rend la fonction de l'élément de contrôle plus claire pour tous les utilisateurs, et le JavaScript fournit le comportement interactif nécessaire.
+
+-----------------------------------------------------------------
+Snippet dans Visual Studio Code :
+
+Pour personnaliser la structure HTML générée par le raccourci ! + Tab dans Visual Studio Code, on va devoir modifier le snippet associé au document HTML :
+
+1 - Ouvrir les snippets de l'éditeur :
+ - Aller dans le menu Fichier (ou Code si vous êtes sur macOS) > Préférences > Extraits de code de l'utilisateur.
+ - Vous verrez une liste des langages. Choisissez HTML.
+
+ 2 - Modifier le snippet :
+    Dans le fichier qui s'ouvre, ajoutez ou modifiez le snippet pour le document HTML. Voici un exemple qui ajoute des métadonnées à la structure HTML générée :
+
+{
+  "HTML5": {
+    "prefix": "!",
+    "body": [
+      "<!DOCTYPE html>",
+      "<html lang=\"fr\">",
+      "<head>",
+      "\t<meta charset=\"UTF-8\">",
+      "\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">",
+      "\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+      "\t<meta name=\"description\" content=\"Description de votre site\">",
+      "\t<title>$1</title>",
+      "</head>",
+      "<body>",
+      "$0",
+      "</body>",
+      "</html>"
+    ],
+    "description": "Document HTML5 avec des métadonnées supplémentaires"
+  }
+}
+
+Pour pouvoir comprendre quel syntaxe utilisé selon le snippet que l'on veut ajouter voici la documentation :
+https://code.visualstudio.com/docs/editor/userdefinedsnippets

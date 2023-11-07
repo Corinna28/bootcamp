@@ -1,0 +1,52 @@
+FAQ : Le DOM
+
+Glossaire/rappel Dom et Noeuds :
+
+DOM :
+Le DOM, ou Document Object Model, est une convention utilisée par les navigateurs web pour représenter et interagir avec les objets contenus dans une page HTML. Imaginez que chaque élément de votre page web (comme les paragraphes, les images, les en-têtes, etc.) soit une boîte que l'on peut manipuler avec JavaScript.
+    -> Structure en arbre : Le DOM organise les éléments d'une page web de manière hiérarchique, un peu comme une famille avec des parents, des enfants, des frères et soeurs. Cette structure permet de naviguer facilement dans les différents éléments de la page.
+    -> Interactivité : Le DOM permet à notre code JavaScript de "parler" à la page HTML. Par exemple, on peut utiliser le DOM pour lire des informations sur un élément, le modifier, le supprimer ou en ajouter un nouveau.
+    -> Langage universel : Tous les navigateurs web modernes utilisent le DOM, ce qui signifie que l'on peut utiliser les mêmes commandes JavaScript pour interagir avec n'importe quelle page web.
+
+    En résumé, le DOM est comme un pont entre votre HTML et JavaScript, nous permettant de créer des pages web interactives et dynamiques.
+
+Un noeud :
+    Un noeud du DOM est un point de connexion ou une "articulation" dans la structure arborescente qui représente notre page web. Chaque partie de notre document HTML, comme les éléments (par exemple, <div>, <p>, <a>), les textes et les commentaires, est un noeud dans le DOM.
+
+    Parcourir le DOM : On peut "marcher" de noeud en noeud en utilisant JavaScript pour aller vers les enfants, les parents, ou les frères et soeurs. Cela nous permet de sélectionner et de manipuler spécifiquement ces éléments.
+
+Conseils / Rappels : 
+
+    - La pratique est essentielle pour comprendre les concepts. Essayez de manipuler le DOM avec des exemples simples, comme changer le contenu d'un élément, modifier des styles ou créer de nouveaux nœuds (cf codex par exemple : https://codexweb.fr/js/08%20-%20Manipulation%20du%20DOM.html) .
+
+    - Lisez beaucoup de code. Cela aidera à comprendre comment d'autres développeurs résolvent des problèmes similaires et cela vous familiarisera avec différentes syntaxes.
+
+    - Utilisez l'inspecteur et la console du navigateur pour inspecter et modifier le DOM, déboguer votre code JavaScript, et observer comment les scripts interagissent avec la page.
+
+    - Commencez par de petits scripts pour comprendre les bases avant de passer à des choses plus complexes.
+
+    - Ne vous laissez pas décourager par les erreurs. Apprenez à les lire et à les comprendre pour savoir quoi corriger.
+
+    - Des sites comme MDN Web Docs sont d'excellentes ressources pour apprendre et comprendre les différentes méthodes et propriétés du DOM et de JavaScript.
+
+    - Appliquez ce que vous apprenez en construisant de petits projets. Cela peut être faire une liste de tâches ou un changement de thème pour un site.
+
+    - Il peut être tentant de copier-coller des solutions que vous trouvez en ligne, mais assurez-vous de comprendre ce que le code fait avant de l'utiliser.
+
+Si vous éprouvez beaucoup de difficultés à comprendre les concepts concernant le DOM :
+
+1 - Revoyez les bases : Assurez-vous de bien comprendre les concepts de base de la programmation, tels que les variables, les boucles, les fonctions, et les conditions. Si ces fondamentaux ne sont pas clairs, tout ce qui suit semblera encore plus difficile. (cf codex : https://codexweb.fr/js/ chapitre 01, 02, 03, 04, 05, 06 et 07) ou bien d'autres doc tel que sur le site MDN, openclassroom ou bien (https://www.pierre-giraud.com/javascript-apprendre-coder-cours/introduction/) par exemple.
+
+2 - Pendant la formation : Concentrez-vous sur les temps d'explications des différents concepts et n'hésitez pas à vous exprimer lorsqu'un concept n'est pas clair pour vous. Pendant les temps de pratique, faites ce que vous pouvez et ne pas hésitez à écrire la logique et le cheminement avant de la coder directement, bien suivre les explications de correction également et poser les questions si durant la correction il y a une incompréhension !
+
+2 - En dehors des heures de formation :
+     - Codez par vous-même. Vous pourriez même réécrire des exemples de code à partir de zéro pour renforcer votre compréhension.
+     - Faites des exercices pratiques : Trouvez des exercices en ligne ou des petits projets pour vous entraîner. La répétition est la clé de l’apprentissage.
+     - Révisez régulièrement : La programmation est une compétence qui s'améliore avec la répétition. Revenez sur les concepts précédents de temps en temps pour vous assurer que vous les avez bien assimilés.
+
+3 - Utilisez des ressources supplémentaires : Si le style d'enseignement du cours ne vous convient pas, vous pouvez chercher d'autres ressources qui peuvent expliquer les concepts d'une manière qui vous parle davantage. Des plateformes comme freeCodeCamp, Codecademy, ou même YouTube offrent des méthodes d'apprentissage alternatives.
+
+4 - Restez patient et motivé : L'apprentissage de la programmation est souvent une question de persévérance. Célébrez les petites victoires et ne vous découragez pas par les défis.
+
+Rappelez-vous que chaque développeur a été débutant à un moment donné, et l'apprentissage est un processus continu. La patience et la persévérance sont clés en programmation.
+
