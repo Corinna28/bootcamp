@@ -1,0 +1,118 @@
+
+header, section, footer{
+   width: 75%;
+   margin: auto;
+}
+
+
+/*HEADER*/
+header{
+    padding: 20px 0;
+    font-size: 1.75em;
+}
+header .overlay{
+    background-color: rgba(0, 0, 0, 0.566);
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header>div{
+    background-image: url('../img/banniere.jpg');
+    height: 400px;
+}
+header div h1{
+    text-transform: uppercase;
+    color: white;
+}
+    /*Nav*/
+.nav_main ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav_main ul li a{
+    text-decoration: none;
+    color: tomato;
+    font-size: 1.25rem;
+    padding: 20px;
+    display: block;
+}
+
+.nav_main ul li a:hover{
+    color:white;
+    background-color: tomato;
+}
+
+/*SECTIONS*/
+section{
+    padding: 50px 0;
+}
+
+section p{
+    padding: 1.5rem;
+}
+
+section h2{
+    font-size: 1.75rem;
+}
+
+    /*Section hedghog*/
+section#hedghog>div{
+    display: flex;
+}
+
+    /*Section coordonnées*/
+section#contact h2{
+    color: tomato;
+}
+    /*Section inscription*/
+section#register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#register label, section#register input{
+    font-size: 1.55rem;
+    width: 100%;
+}
+
+section#register form div{
+    padding: 20px 0;
+}
+
+section#register input[type="submit"]{
+    background-color: tomato;
+    border: solid rgb(241, 67, 36) 2px;
+    padding: 10px 0;
+    cursor: pointer;
+    color: white;
+}
+
+/*FOOTER*/
+
+footer nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+footer nav ul a i{
+    font-size: 1.5em;
+}
+
+footer nav ul a{
+    text-decoration: none;
+    padding: 30px;
+    color: black;
+}
+
+footer nav.other_nav ul li.copyright{
+    color: tomato;
+}
