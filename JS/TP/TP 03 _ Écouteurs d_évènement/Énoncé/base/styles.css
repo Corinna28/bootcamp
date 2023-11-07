@@ -46,4 +46,17 @@ h1+p{
 /* ////////////////////////////////////////////////////////// */
 /* Classes utilisées par JS à faire ici : */
 
+.changement-couleur {
+    background-color: red; /* Couleur de fond rouge */
+    color: white; /* Texte en blanc */
+  }
 
+
+.retournement {
+    transform: rotateY(180deg); /* Rotation de 180 degrés*/
+  }
+
+  .zoom {
+    transform: scale(1.2); /* Zoom de 20% (120%) */
+  }
+  
