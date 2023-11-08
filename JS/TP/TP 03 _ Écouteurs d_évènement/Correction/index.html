@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>TP 03 : Listeners</title>
+</head>
+<body>
+
+    <h1>JavaScript: Les écouteurs d'évènements</h1>
+
+    <p>Liste complète: <a href="https://developer.mozilla.org/fr/docs/Web/Events" target="_blank">https://developer.mozilla.org/fr/docs/Web/Events</a> et Propriété css transform : <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform" target="_blank">https://developer.mozilla.org/en-US/docs/Web/CSS/transform</a></p>
+    <div class="buttons-container">
+
+        <!-- Ce bouton doit avoir un écouteur d'évènement au click pour ajouter/enlever la classe CSS de changement de couleur -->
+        <div class="button" id="click">Cliquez sur moi pour changer ma couleur !</div>
+
+        <!-- Ce bouton doit avoir un écouteur d'évènement au double-click pour ajouter/enlever la classe CSS de retournement -->
+        <div class="button" id="double-click">Double-cliquez sur moi pour me retourner !</div>
+
+        <!--
+        Ce bouton doit avoir deux écouteurs d'évènement :
+        Un écouteur d'évènement quand la souris rentre sur le bouton pour ajouter la classe CSS de zoom
+        Un écouteur d'évènement quand la souris sort du bouton pour retirer la classe CSS de zoom
+        -->
+        <div class="button" id="mouse">Passez la souris ici pour grossir !</div>
+
+        <!-- Ce bouton doit avoir un écouteur d'évènement à la copie pour changer le texte par "........." -->
+        <div class="button" id="copy">Copiez ce texte pour l'effacer !</div>
+
+        <!-- Le champ de texte input dans ce bouton doit avoir un écouteur d'évènement à la pression d'une touche clavier pour changer le texte du paragraphe par la valeur du champ -->
+        <div class="button" id="live">
+            <input type="text">
+            <p>Écrivez dans le champ !</p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
