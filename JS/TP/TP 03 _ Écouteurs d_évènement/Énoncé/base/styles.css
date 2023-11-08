@@ -46,10 +46,9 @@ h1+p{
 /* ////////////////////////////////////////////////////////// */
 /* Classes utilisées par JS à faire ici : */
 
-.changement-couleur {
-    background-color: red; /* Couleur de fond rouge */
-    color: white; /* Texte en blanc */
-  }
+.buttons-container .colorChange{
+    background-color:#242f81;
+}
 
 
 .retournement {

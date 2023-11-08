@@ -1,18 +1,10 @@
 
 // Écouteur d'évènement sur le premier rectangle
 
-const bouton = document.querySelector('#click');
-
-bouton.addEventListener('click', function () {
-    // Vérifie si la classe 'changement-couleur' est présente sur le bouton
-    if (bouton.classList.contains('changement-couleur')) {
-        // Si la classe est présente, la supprime
-        bouton.classList.remove('changement-couleur');
-    } else {
-        // Si la classe est absente, l'ajoute
-        bouton.classList.add('changement-couleur');
-    }
+document.querySelector('#click').addEventListener('click', function(){
+    this.classList.toggle('colorChange');
 });
+
 // Écouteur d'évènement sur le deuxième rectangle
 
 
