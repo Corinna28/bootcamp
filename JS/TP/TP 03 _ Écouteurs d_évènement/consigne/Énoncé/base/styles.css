@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+h1+p{
+    text-align: center;
+}
+
+.buttons-container{
+    width: 40%;
+    margin: 50px auto;
+}
+
+.buttons-container .button{
+    background-color: #b7c0ff;
+    text-align: center;
+    padding: 40px;
+    border: 2px solid black;
+    font-size: 1.4rem;
+    cursor: pointer;
+    margin: 20px 0;
+    transition: all ease .5s;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    -ms-transition: all ease .5s;
+    -o-transition: all ease .5s;
+}
+
+#live p{
+    margin: 0;
+}
+
+#live input{
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    padding: 5px;
+    text-align: center;
+    width: 80%;
+}
+
+/* ////////////////////////////////////////////////////////// */
+/* Classes utilisées par JS à faire ici : */
+
+

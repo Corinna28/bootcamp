@@ -1,0 +1,41 @@
+FAQ : Les écouteurs d'évènement
+
+Le petit "e" event (paramètre faisant référence à tout évènement valide):
+
+Il s'agit à proprement parlé d'un objet relatif à l'évènement qui vient de se produire, il contient donc des attributs (variables) et des méthodes (fonctions). Par exemple nous avons vu lors d'une écoute au clic que nous pouvions avoir accès à la méthode preventDefault() grace à l'objet 'e' rattaché à notre évènement. Cette méthode permet de stopper le comportement par défaut d'un élément HTML.
+
+Vous pouvez vous en servir dans tout un tas de contexte différent suivant l'information que vous allez pouvoir récupérer par exemple :
+
+css :
+.carre{
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    position: absolute;
+    top: 0;
+}
+
+html :
+<div class="carre"></div>
+
+
+js :
+// Ce code me permet de déplacer ma div de 5px par 5px en bas à la pression de la touche fléché du bas
+
+// selection de la div avec la classe carre
+let carre = document.querySelector('.carre');
+
+// Je pose une écoute à la pression de touche sur le dom entier en utilisant le paramètre "e" qui me permettre d'avoir accès à key (la clé(valeur) de la touche)
+document.addEventListener('keydown', function(e){
+    // Je met une condition si la valeur de ma clé est égale à ArrowDown qui correspond à la touche fléché du bas
+    if(e.key === "ArrowDown"){
+        // je stocke le positionnement de ma div en faisant appel à offsetTop (qui renvoie la distance entre la bordure extérieure de l'élément courant et la bordure intérieure haute de l'élément)
+        let positionTop = carre.offsetTop;
+        // Je change la valeur de la propriété css top en ajoutant 5px
+        carre.style.top = positionTop + 5 + 'px';
+    }
+});
+
+
+Note : 
+Pour l'explication du rectangle 05 du tp : écouteurs, j'ai mis plus de commentaire pour mieux l'expliquer sur la correction que j'ai mis à disposition sur le drive, je vous laisse donc regarder et m'envoyer un mp discord si éventuellement ce n'était encore pas assez claire !
