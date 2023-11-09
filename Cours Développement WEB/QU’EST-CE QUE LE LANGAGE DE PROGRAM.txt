@@ -1,0 +1,21 @@
+QU’EST-CE QUE LE LANGAGE DE PROGRAMMATION?
+Les langages de programmation servent d’interprète / intermédiaire pour traduire nos instructions en code machine.
+
+• C’est très utile pour les programmeurs.
+• Il est responsable de la conversion des langues.
+
+Il existe de nombreux langages de programmation qui servent leur objectif unique.
+Ce sont: Java, Python, Kotlin, JavaScript, Rust, Ruby, C, C #, Assembly, C ++, etc.
+
+HTML/CSS ne sont pas des langages de programmation. Ils ne peuvent pas effectuer d’arithmétique de base.
+
+
+JavaScript est un langage de script conçu ou conçu pour résoudre des tâches plus petites, et Java ou Python effectue des tâches plus compliquées.
+
+Enfin, nous avons également des langages LOW et de haut niveau.
+
+Les langages de bas niveau sont des langages de programmation similaires au code machine tel que Assembly ou C.
+
+Les langages de haut niveau sont des langages de programmation qui vous permettent d’écrire des programmes informatiques sans avoir à avoir une connaissance spécifique du processeur ou du matériel,
+
+que le programme fonctionnera. Tels que Python, Java, etc.
