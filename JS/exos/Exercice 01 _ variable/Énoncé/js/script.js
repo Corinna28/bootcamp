@@ -9,8 +9,8 @@
 
 // 1
 
-// var nombre1 = 10;
-// var nombre2 = 20.5;
+// let nombre1 = 10;
+// let nombre2 = 20.5;
 
 // 2
 
@@ -28,9 +28,9 @@
 
 // 5
 
-// var nombre1 = 10;
-// var nombre2 = 20.5;
-// var somme = nombre1 + nombre2;
+// let nombre1 = 10;
+// let nombre2 = 20.5;
+// let somme = nombre1 + nombre2;
 
 // console.log("Le résultat est " + somme);
 
@@ -38,18 +38,18 @@
 
 // 1) Créer 3 variables pour y stocker un prénom, un âge et une ville
 
-// var prenom = "Corinna";
-// var age = 40;
-// var ville = "Amiens";
+// let prenom = "Corinna";
+// let age = 40;
+// let ville = "Amiens";
 
 
 // 2) Afficher une phrase à l'écran du type :
 //     Bonjour, je m'appelle xxxx, j'habite à xxxx et dans 4 ans j'aurais xx ans.
 
-var prenom = "Corinna";
-var age = 40;
-var ville = "Amiens";
-var anneesFutures = 4;
-var ageFutur = age + anneesFutures;
+let prenom = "Corinna";
+let age = 40;
+let ville = "Amiens";
+let anneesFutures = 4;
+let ageFutur = age + anneesFutures;
 
 console.log("Bonjour, je m'appelle " + prenom + ", j'habite à " + ville + " et dans " + anneesFutures + " ans j'aurais " + ageFutur + " ans.");

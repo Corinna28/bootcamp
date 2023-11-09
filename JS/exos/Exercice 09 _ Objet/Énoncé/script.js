@@ -16,7 +16,7 @@
 // Ensuite faire afficher dans une alert la méthode manger.
 
 // Création de l'objet Animal
-var Animal = {
+let Animal = {
     type: "",           // Attribut sur le type d'animal
     provenance: "",     // Attribut sur la provenance de l'animal
     caractere: "",      // Attribut sur le caractère de l'animal
