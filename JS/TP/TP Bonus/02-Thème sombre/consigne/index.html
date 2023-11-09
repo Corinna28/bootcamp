@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Formulaire JS</title>
+</head>
+<body>
+    <!--Bouton pour  changer le thème de ma page-->
+    <div class="button-change-theme">
+        <div title="thème clair" id="theme-light"><i class="fa-regular fa-sun"></i><span>Thème clair</span></div>
+        <div title="thème sombre" id="theme-dark"><i class="fa-solid fa-moon"></i><span>Thème sombre</span></div>
+    </div>
+    <div class="main">
+        <!--Formulaire-->
+        <div class="content-title">
+            <h1>Formulaire JS</h1>
+        </div>
+
+        <div class="container-form">
+
+            <form action="" method="POST" id="register-form">
+                <div>
+                    <label for="firstname">Prénom</label>
+                    <input type="text" id="firstname" name="firstname">
+                </div>
+
+                <div>
+                    <label for="lastname">Nom</label>
+                    <input type="text" id="lastname" name="lastname">
+                </div>
+
+                <div>
+                    <input class="btn-form" type="submit" value="Envoyer">
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

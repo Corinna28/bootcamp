@@ -1,0 +1,27 @@
+Pratique bonus JS : Gérer l'affichage des erreurs d'un formulaire en Javascript
+
+Énoncé : Suivre les instructions suivantes pour faire la vérification de 2 champs de formulaire et faire afficher l’erreur qui correspond.
+
+Pour cet exercice:
+- Le fichier HTML vous sera fourni et ne devra pas être modifié.
+- Le fichier CSS vous sera également fourni et ne devra pas être modifié.
+
+- Dans votre fichier JS vous devrez :
+    - Créer une fonction avec deux paramètres (le premier fera référence au champ demandé et le deuxième sera le message d'erreur à afficher).
+
+    - Dans cette fonction, vous devrez :
+        - Ajouter la classe « field-invalid » sur le champ demandé.
+        - Créer une div pour le message d’erreur.
+        - Ajouter la classe « error-text » à cette div.
+        - Donner du texte à cette div qui sera le message d’erreur à afficher.
+        - Insérer cette div après le champ demandé.
+
+    - Attendre le chargement de la page et à l’intérieur :
+        - Sélectionner le formulaire à vérifier.
+        - Créer 2 variables qui correspondent au 2 champs de formulaire à vérifier
+        - Mettre un écouteur d’évènement sur notre formulaire sélectionné à l’envoi de celui-ci
+        - Dans notre écouteur il faudra :
+            - Empêcher le comportement par défaut de notre formulaire.
+        Nettoyer  les messages d’erreurs qui seront déjà présent pour éviter l’accumulation de ceux-ci ( class field-invalid et div avec class error-text ).
+            - Vérifier si la valeur récupérée du premier champ est inférieur à 2 ou supérieur à 25, si c’est le cas on appelle la fonction créée précédemment en indiquant en premier paramètre le champ choisi et en second le texte suivant : 'Le prénom doit contenir entre 2 et 25 caractères !’
+            - Vérifier si la valeur récupéré du deuxième champ est inférieur à 2 ou supérieur à 25, si c’est le cas on appelle la fonction créée précédemment en indiquant en premier paramètre le champ choisi et en second le texte suivant : ‘Le nom doit contenir entre 2 et 25 caractères !'

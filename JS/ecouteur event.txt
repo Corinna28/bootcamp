@@ -1,0 +1,29 @@
+// Écouteur qui permet d'attendre que le dom complet soit chargé avant d'éxécuter ce qui se trouve entre les {} de function()
+document.addEventListener('DOMContentLoaded', function(){
+
+    // Écouteur placé sur mon élément h1, de type clic qui me permet de changer la couleur du h2 en rouge lors de l'écoute au clic de mon h1
+    document.querySelector('h1').addEventListener('click', function(){
+        document.querySelector('h2').style.color = 'red';
+    });
+
+    // Écouteur placé sur mon élément h2, de type clic qui me permet de souligner le h2 lors de l'écoute au clic de mon h2 (pour éviter une répétition lors de la selection de mon h2 je peux utiliser le mot clée this)
+    document.querySelector('h2').addEventListener('click', function(){
+        this.style.textDecoration = 'underline';
+    });
+
+    // le petit "e" de ma fonction me permet d'avoir accès à .preventDefault() me permettant de stopper le comportement par défault de mon lien "a"
+    document.querySelector('a').addEventListener('click', function(e){
+        e.preventDefault();
+    })
+
+    // Dans le cas où je voudrais supprimer un écouteur d'évènement de façon précise (en utilisant "removeEventListener"), il faut que ma fonction ne soit pas anonyme, ici ma fonction porte le nom test
+
+    function test(){
+        alert('Hello !');
+    }
+
+    document.querySelector('.link-cat').addEventListener('click', test);
+
+    document.querySelector('.link-cat').removeEventListener('click', test);
+
+});

@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/*Variables css pour appliquer un thème de couleur spécifique pour ma page*/
+:root{
+    --main-theme-background-color-page: #ffffff;
+    --main-theme-text-color-page: #000000;
+    --main-theme-label-color-page: #000000;
+    --main-theme-input-submit-color-page: #0a53be;
+    --main-theme-input-submit-hover-color-page: #ffffff;
+    --main-theme-input-submit-background-color-page: #ffffff;
+    --main-theme-input-submit-hover-background-color-page: #0a53be;
+    --main-theme-input-submit-border-page: #0a53be solid 1px;
+    --main-theme-button-actif-background-color-page: #0a53be;
+    --main-theme-button-actif-color-page: #ffffff;
+    --main-theme-button-no-actif-background-color-page: #ffffff;
+    --main-theme-button-no-actif-color-page: #000000;
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: var(--main-theme-background-color-page);
+}
+
+/*Variables css pour appliquer un thème de couleur spécifique pour ma page quand elle est en thème sombre*/
+body.dark-theme{
+    --main-theme-background-color-page: #000000;
+    --main-theme-text-color-page: #ffffff;
+    --main-theme-label-color-page: #ffffff;
+    --main-theme-input-submit-color-page: #ffffff;
+    --main-theme-input-submit-hover-color-page: #0a53be;
+    --main-theme-input-submit-background-color-page: #0a53be;
+    --main-theme-input-submit-hover-background-color-page: #ffffff;
+    --main-theme-input-submit-border-page: #ffffff solid 1px;
+    --main-theme-button-actif-background-color-page: #ffffff;
+    --main-theme-button-actif-color-page: #000000;
+    --main-theme-button-no-actif-background-color-page: #0a53be;
+    --main-theme-button-no-actif-color-page: #ffffff;
+}
+
+/*bouton de changement de thème*/
+.button-change-theme{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: stretch;
+}
+.button-change-theme div{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    padding: 5px;
+    width: 130px;
+    margin: 5px 0;
+    border: #1a1d20 solid 1px;
+    border-radius: 10px;
+}
+.button-change-theme div i{
+    padding-right: 10px;
+}
+
+.button-change-theme div#theme-light{
+    background-color: var(--main-theme-button-actif-background-color-page);
+    color: var(--main-theme-button-actif-color-page);
+}
+
+.button-change-theme div#theme-dark{
+    background-color: var(--main-theme-button-no-actif-background-color-page);
+    color: var(--main-theme-button-no-actif-color-page);
+}
+
+/* Titre */
+.content-title{
+    text-align: center;
+    color: var(--main-theme-text-color-page);
+}
+
+/*Page*/
+.main{
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Style du formulaire */
+.container-form #register-form div{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container-form #register-form div label{
+    color: var(--main-theme-text-color-page);
+    padding:10px 0;
+}
+
+.container-form #register-form div input[type='text']{
+    padding: 8px 10px;
+    border: #9b9b9b solid 1px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.container-form #register-form div input[type='submit']{
+    cursor: pointer;
+    color: var(--main-theme-input-submit-color-page);
+    border: var(--main-theme-input-submit-border-page);
+    background-color: var(--main-theme-input-submit-background-color-page);
+    border-radius: 5px;
+    padding: 10px 0;
+    font-size: 1rem;
+    transition: all ease-in-out 0.15s;
+}
+.container-form #register-form div input[type='submit']:hover{
+    background-color: var(--main-theme-input-submit-hover-background-color-page);
+    color: var(--main-theme-input-submit-hover-color-page);
+}
+
+/*div de message d'alerte*/
+.alert{
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 5px;
+    font-weight: bold;
+}
+/*Message de succès*/
+.alert-success{
+    background-color: #add7b4;
+    border: rgba(15, 81, 50, 0.46) solid 1px;
+    color: #0a3822;
+}
+
+/*div d'erreur*/
+.container-form #register-form div input.field-invalid{
+    border: rgb(178, 5, 5) solid 1px;
+}
+
+.container-form #register-form div input.field-invalid:focus{
+    outline: rgba(178, 5, 5, 0.49) solid 1px;
+    box-shadow: 0 0 0 .25rem rgba(185, 34, 34, 0.42);
+
+}
+
+/*text d'erreur*/
+.error-text{
+    color: #a80303;
+}
+
+/*Responsive*/
+@media screen and (min-width: 800px){
+    .main{
+        width: 75%;
+        margin: auto;
+    }
+}
+@media screen and (min-width: 1000px){
+    .main{
+        width: 50%;
+    }
+}
