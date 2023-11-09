@@ -1,0 +1,13 @@
+
+
+Énoncé :
+
+Suivre les instructions suivantes pour faire le script qui permettra l’ajout ou la suppression de la classe « dark-theme » selon l’écoute du clic sur nos deux boutons qui serviront à changer le thème de couleur de notre page.
+
+Le fichier HTML sera donné et à ne pas modifier.
+Le fichier CSS sera donné également et à ne pas modifier.
+
+Dans votre fichier JS vous devrez :
+Faire une fonction avec un paramètre qui définira si il s’agit du thème dark ou light, avec une condition à l’intérieur pour ajouter la classe au body ou la supprimer.
+
+Faire deux écouteurs d’évènement qui définiront selon le bouton qui sera cliqué la fonction a utilisé avec le thème light ou dark.
