@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+h1{
+    text-align: center;
+}
+.gallery{
+    background-color: #818181;
+    width: 80%;
+    margin:auto;
+    padding: 15px;
+    box-shadow: 0 0 10px 2px #656565;
+    text-align: center;
+}
+.gallery>img{
+    width: 80%;
+    margin: 20px;
+    border: solid 2px #B5B5B5;
+    box-shadow: 10px 10px 5px #656565;
+    cursor: zoom-in;
+}
+
+/* Ici le CSS à faire pour l'affichage de l'overlay, de l'image en grand et de la croix de fermeture à enlever pour énoncé */
+
+.overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay img{
+    width: 75%;
+}
+
+.overlay .close{
+    color: white;
+    font-size: 64px;
+    text-decoration: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+@media(min-width: 600px){
+    .gallery>img{
+        width: 40%;
+    }
+}
+@media(min-width: 1200px){
+    .gallery>img{
+        width: 20%;
+    }
+}
