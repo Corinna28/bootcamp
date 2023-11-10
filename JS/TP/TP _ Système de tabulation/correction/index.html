@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TP : Tabulations</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <h1>Système de Tabulations</h1>
+
+        <!-- Boîte du système d'onglet -->
+        <div class="tab-container">
+            <!-- Boîte des onglets -->
+            <div class="tabs">
+                <div data-open="view1" class="tab active">
+                    <p>Onglet 1</p>
+                </div>
+                <div data-open="view2" class="tab">
+                    <p>Onglet 2</p>
+                </div>
+                <div data-open="view3" class="tab">
+                    <p>Onglet 3</p>
+                </div>
+                <div data-open="view4" class="tab">
+                    <p>Onglet 4</p>
+                </div>
+            </div>
+
+            <!-- Boîte des vues -->
+            <div class="views">
+
+                <div class="view active" id="view1">
+                    <h2>Premier onglet</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+
+                <div class="view" id="view2">
+                    <h2>Deuxième onglet</h2>
+                    <p>Lorem, ipsum dolor.</p>
+                </div>
+
+                <div class="view" id="view3">
+                    <h2>Troisième onglet</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aliquid, cum suscipit non labore alias cumque perspiciatis corporis quasi nobis quis earum nam, laudantium ut amet! Quas fugiat accusantium at pariatur excepturi nihil quisquam repellendus tempore sunt id labore dolorum iste earum eligendi aliquam debitis, voluptates quidem maxime. Optio, illum.</p>
+                </div>
+
+                <div class="view" id="view4">
+                    <h2>Quatrième onglet</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, libero alias. Mollitia aliquid quidem harum maxime deleniti voluptatibus vel adipisci.</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
