@@ -1,0 +1,102 @@
+body {
+  background: linear-gradient(to right, rgb(10, 10, 10), rgb(35, 32, 32));
+}
+
+
+/* navbarre */
+
+@media (max-width: 576px) {
+  .navbar {
+    text-align: center;
+  }
+
+  .navbar img {
+    margin-bottom: 10px;
+  }
+
+  .navbar p {
+    margin-bottom: 10px;
+  }
+
+  .navbar ul {
+    display: block;
+    text-align: center;
+  }
+
+  .navbar ul li {
+    display: block;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/* couleur de fond  */
+
+.logo {
+  background-color: #f1f3f5;
+  justify-content: center;
+}
+
+footer {
+  background-color: #343a40;
+
+}
+
+/* container centrale */
+.centre {
+  background-color: rgb(250, 245, 245);
+}
+
+
+button {
+  margin: 10px;
+}
+
+/* police d'ecriture */
+.nav-link,
+button {
+  font-family: 'Liberation';
+  src: url(../fonts/Liberationsans);
+
+
+}
+
+p {
+  color: rgb(13, 12, 12);
+}
+
+h4,
+h5 {
+  padding: 10px;
+  text-align: center;
+}
+
+h5 {
+  color: black;
+}
+
+h4 {
+  color: orange;
+}
+
+
+/* footer */
+.footers {
+  padding: 30px;
+  font-size: small;
+  color: aliceblue;
+
+}
+
+.horizontal-line {
+  border: none;
+  border-top: 3px solid #fcf9f9;
+  width: 95%;
+  margin: 10px auto;
+  /* Ajuste la marge pour espacer la ligne du texte */
+}
+
+.social-icon {
+  margin-right: 30px;
+  padding: 30px;
+}
