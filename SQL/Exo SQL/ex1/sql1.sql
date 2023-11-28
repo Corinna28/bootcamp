@@ -3,13 +3,13 @@
 
 
 CREATE TABLE etudiants (
-    id INT PRIMARY KEY,
-    Nom VARCHAR(50),
-    Prenom VARCHAR(50),
-    Sexe VARCHAR(5),
-    Ville VARCHAR(30),
-    Age INT,
-    Arriver DATE
+	id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    nom VARCHAR(30),
+    prenom VARCHAR(30),
+    sexe VARCHAR(5),
+    ville VARCHAR(30),
+    age INT,
+    arriver_le DATE
 );
 
 
@@ -24,16 +24,14 @@ CREATE TABLE etudiants (
 -- • Martine, Alaplage, Femme, Troyes, 23, 29/01/2019
 
 
-INSERT INTO etudiants (id, Nom, Prenom, Sexe, Ville, Age, Arriver)
-VALUES 
-    (1, 'Talus', 'Jean', 'Homme', 'Bordeaux', 24, '2019-02-02'),
-    (2, 'Charles', 'Sylvie', 'Femme', 'Auxerre', 23, '2018-11-23'),
-    (3, 'Cerneau', 'Mathilde', 'Femme', 'Agen', 18, '2019-09-12'),
-    (4, 'Antoine', 'Marc', 'Homme', 'Bordeaux', 21, '2019-03-01'),
-    (5, 'Bertrand', 'Edmond', 'Homme', 'Bordeaux', 26, '2017-07-14'),
-    (6, 'Tarzan', 'Sylvie', 'Femme', 'Troyes', 24, '2018-05-08'),
-    (7, 'Ben', 'Henry', 'Homme', 'Lille', 20, '2017-10-26'),
-    (8, 'Alaplage', 'Martine', 'Femme', 'Troyes', 23, '2019-01-29');
+INSERT INTO etudiants (nom, prenom, sexe, ville, age, arriver_le) VALUES 
+('Charles', 'Sylvie', 'Femme', 'Auxerre', 23, '2018-11-23'),
+('Cerneau', 'Mathilde', 'Femme', 'Agen', 18, '2019-09-12'),
+('Antoine', 'Marc', 'Homme', 'Bordeaux', 21, '2019-03-01'),
+('Bertrand', 'Edmond', 'Homme', 'Bordeaux', 26, '2017-07-14'),
+('Tarzan', 'Sylvie', 'Femme', 'Troyes', 24, '2018-05-08'),
+('Ben', 'Henry', 'Homme', 'Lille', 20, '2017-10-26'),
+('Alaplage', 'Martine', 'Femme', 'Troyes', 23, '2019-01-29');
 
 
 --1. Lister tous les étudiants :
@@ -92,12 +90,12 @@ SELECT * FROM etudiants WHERE Prenom IN ('Charles', 'Martin', 'Sylvie', 'Paul');
 
 --13. Insérer un nouvel étudiant (à vous de choisir) :
 
-INSERT INTO etudiants (Nom, Prenom, Sexe, Ville, Age, Arriver) VALUES ('Dave', 'LLOPPER', 'Homme', 'Amiens', 30, '2021-01-15');
+INSERT INTO `etudiants`(`nom`, `prenom`, `sexe`, `ville`, `age`, `arriver_le`) VALUES ('Dave', 'Llopper', 'Homme', 'Amiens', 30, '2021-01-15');
 
 
 --14. Lister les étudiants arrivés entre le 01/02/2019 et 05/03/2019 :
 
-SELECT * FROM etudiants WHERE Arriver BETWEEN '2019-02-01' AND '2019-03-05';
+SELECT * FROM etudiants WHERE arriver_le BETWEEN '2019-02-01' AND '2019-03-05';
 
 --15. « Sylvie Tarzan » a changé de nom de famille pour « Mercure » :
 
