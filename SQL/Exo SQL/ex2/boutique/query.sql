@@ -1,3 +1,22 @@
+--Créer les tables suivantes :
+
+-- Article
+-- ID PRIMARY KEY
+-- Titre VARCHAR(70)
+-- Contenu TEXT
+-- Créer le DATE
+
+-- Commentaire
+-- ID PRIMARY KEY
+-- Commentaire TEXT
+-- Ajouter le DATE
+
+-- Catégorie
+-- ID PRIMARY KEY
+-- Nom VARCHAR(60)
+
+-- Créer les relations nécessaires entre les tables
+
 -- Article table
 CREATE TABLE Article (
     ID INT PRIMARY KEY AUTO_INCREMENT,
